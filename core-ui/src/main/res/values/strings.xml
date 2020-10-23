@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <string name="app_name">OrderPay</string>
+
+    //Keys
+    <string name="app_center_key" tools:ignore="TypographyDashes">5f81bc8d-809c-4cf1-950e-14b2fa1d2327</string>
+    <string name="facebook_app_id">200607844351753</string>
+    <string name="fb_login_protocol_scheme">fb200607844351753</string>
+    <string name="google_map_api_key">AIzaSyCd9uw4ljx5EUa7JfllG-me_cYnfMQYhxo</string>
+    <string name="google_signin_clent_id" tools:ignore="TypographyDashes">585881791017-7gqapvalt1v0r695ae78veres93bk289.apps.googleusercontent.com</string>
+
+    <!--play store-->
+    <string name="app_google_play_store_link">"https://play.google.com/store/apps/details?id="</string>
+    <string name="app_market_link">"market://details?id="</string>
+
+    // OnBoarding
+    <string name="terms_txt"><![CDATA[Terms & Conditions and Privacy Policy]]></string>
+    <string name="continue_btn">Continue</string>
+    <string name="add_a_card">Add a card</string>
+    <string name="add_payment_method">Add Payment\nMethod</string>
+    <string name="promotions_menu">Promotions</string>
+    <string name="closed_now">Closed now</string>
+    <string name="ok" tools:ignore="ButtonCase,Typos">Ok</string>
+    <string name="error_title">Error</string>
+    <string name="cancel">Cancel</string>
+
+
+    <string name="referral_offers">Referral Offers</string>
+    <string name="offer_title">Your Offer</string>
+    <string name="refer_a_friend">Refer a friend</string>
+    <string name="enter">Enter</string>
+    <string name="my_current_location_tv">My current Location</string>
+    <string name="suggested_location">Suggested Locations</string>
+    <string name="talk_to_orderpay">Talk to OrderPay</string>
+    <string name="feedback">Feedback</string>
+    <string name="export_data">Export data</string>
+
+    <string name="lorem_ipsum_text">Lorem ipsum dolor sit amet consetetur</string>
+    <string name="lorem_ipsum_dummy_text">Lorem ipsum dolor sit amet</string>
+
+    <string name="camera">Camera</string>
+    <string name="upload_from_gallery">Upload from Gallery</string>
+
+    <string name="send_text">Send</string>
+    <string name="contact_us_text">Contact Us</string>
+    <string name="selec_a_reason_text">Select a reason</string>
+    <string name="your_message_text">Your message</string>
+    <string name="write_your_message_here_text">Write your message here</string>
+
+    <string name="went_wrong">Something went wrong.\nTry again later !!!</string>
+    <string name="your_data_will_be_sent_to_your_registered_email_address">Your data will be sent to your registered email address.</string>
+    <string name="export_your_data_text">Export your Data</string>
+    <string name="export_my_data_text">Export my data</string>
+    <string name="not_now_text">Not now</string>
+
+    <string name="orders">Orders</string>
+
+    <string name="friday_fun_text">Friday Fun</string>
+    <string name="_1_ropemaker_st">1 Ropemaker St.</string>
+    <string name="jump_the_queue">Jump the queue</string>
+    <string name="burger_king_text">Burger King</string>
+    <string name="num_4_text">4</string>
+    <string name="order_6472_text">Order 6472</string>
+    <string name="_25_10_2019">25/10/2019</string>
+    <string name="eat_text">EAT.</string>
+    <string name="_1_finsbury_square">1 Finsbury Square</string>
+    <string name="bill_text">Bill</string>
+    <string name="_6_80">£6.80</string>
+    <string name="tip">Tip -</string>
+    <string name="_10_percent">10%</string>
+    <string name="_0_68">£0.68</string>
+    <string name="total_text">Total</string>
+    <string name="_7_4">£7.4</string>
+    <string name="_1_finsbury_square_ec11rs">1 Finsbury Square, EC11RS</string>
+
+
+    <string name="fast_food_chain_with_made_to_order_burgers_fries_amp_hot_dogs_we_also_have_free_peanuts_while_you_wait"><![CDATA[Fast-food chain with made-to-order burgers, fries & hot dogs. We also have free peanuts while you wait.]]></string>
+    <string name="_44_0000_0000_0000">+44 0000 0000 0000</string>
+    <string name="www_fiveguys_com">www.fiveguys.com</string>
+
+    <string name="reorder_tv">Reorder</string>
+
+    <string name="save_password">Save Password</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="x">x</string>
+    <string name="invalid_content">Invalid content</string>
+    <string name="lorem_ipsum_dolor_sit_amet_consetetur_sadipscing_elitr_sed_diam_nonumy_eirmod_tempor_invidunt">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.</string>
+    <string name="good_food_is_always_cooking">GOOD FOOD IS ALWAYS COOKING</string>
+    <string name="your_cart_is_empty_nadd_something_from_the_menu">Your cart is empty. \nAdd Something from the menu.</string>
+    <string name="browse_restaurant">Browse Restaurant</string>
+    <string name="vat_applied">VAT</string>
+    <string name="total">Total</string>
+    <string name="pound_sign">£</string>
+    <string name="the_product_you_want_to_order_contains_the_following_allergens">The product you want to order contains the following allergens:</string>
+    <string name="are_you_sure_do_you_want_to_proceed">Are you sure do you want to proceed?</string>
+    <string name="dash">-</string>
+    <string name="edit_allergens_and_dietary_type">Edit Allergens \nand Dietary Type</string>
+    <string name="you_have">You have\u0020</string>
+    <string name="saved_address">\u0020saved address</string>
+    <string name="comma_and_space">,\u0020</string>
+    <string name="no_saved_address">No saved address</string>
+
+    <string name="change_payment_title">Change</string>
+
+    <string name="login">Login</string>
+    <string name="line_break">\n</string>
+    <string name="by_continuing_to_use_our_service_you_re_accepting_our">By continuing to use our service, you\'re accepting our</string>
+    <string name="visa_text">VISA</string>
+
+    <string name="brand_menu">Menu</string>
+    <string name="brand_basket">Basket</string>
+    <string name="restaurants_menu">Restaurants</string>
+    <string name="profile_menu">Profile</string>
+    <string name="dummy_basket_count">12</string>
+    <string name="dummy_total_value">42.96</string>
+    <string name="dummy_card_number">•••• •••• •••• 6847</string>
+    <string name="dummy_empty_price">£--</string>
+    <string name="dummy_wagamama_liverpool_st">Wagamama Liverpool St.</string>
+    <string name="dummy_1_ropemaker_st">1 Ropemaker St</string>
+    <string name="dummy_0_2_km_away">0.2 km away</string>
+
+</resources>

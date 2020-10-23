@@ -1,0 +1,6 @@
+{
+  "authUrl": "https://prod.auth.com",
+  "unauthUrl": "https://prod.unauth.com",
+  "debugUrl": "https://debug.com",
+  "demoUrl": "https://demo.com"
+}

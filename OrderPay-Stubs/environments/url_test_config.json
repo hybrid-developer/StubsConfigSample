@@ -1,0 +1,70 @@
+[
+  {
+    "name": "STUB",
+    "environments": [
+      {
+        "name": "Success Scenarios",
+        "servers": [
+          {
+            "name": "LoggedIn",
+            "authUrl": "STUB",
+            "unauthUrl": "STUB",
+            "debugUrl": "STUB",
+            "demoUrl": "STUB",
+            "section": "success/loggedIn"
+          },
+          {
+            "name": "Guest",
+            "authUrl": "STUB",
+            "unauthUrl": "STUB",
+            "debugUrl": "STUB",
+            "demoUrl": "STUB",
+            "section": "success/guest"
+          }
+        ]
+      },
+      {
+        "name": "Login Error Scenarios",
+        "servers": [
+
+          {
+            "name": "Rest API error",
+            "authUrl": "STUB",
+            "unauthUrl": "STUB",
+            "debugUrl": "STUB",
+            "demoUrl": "STUB",
+            "section": "enrolment/rest_api_error"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Servers",
+    "environments": [
+      {
+        "name": "Endpoints",
+        "servers": [
+          {
+            "name": "QA",
+            "authUrl": "https://prod.auth.com",
+            "unauthUrl": "https://prod.unauth.com",
+            "debugUrl": "https://debug.com",
+            "demoUrl": "https://demo.com",
+            "section": "/business/commercial/internetbanking/api"
+          },
+          {
+            "name": "UAT",
+            "authUrl": "https://prod.auth.com",
+            "unauthUrl": "https://prod.unauth.com",
+            "debugUrl": "https://debug.com",
+            "demoUrl": "https://demo.com",
+            "section": "/business/commercial/internetbanking/api"
+          }
+        ]
+      }
+    ]
+  }
+]
+
+

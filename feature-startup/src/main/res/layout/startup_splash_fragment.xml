@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.checkfer.core.ui.OrderPayLoader
+        android:id="@+id/loader"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/tv_style_bold_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat_regular_font"
+        android:text="@string/app_name"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_21ssp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loader" />
+
+<!--    <com.orderpay.ui.custom.OPButton
+        android:id="@+id/scan_btn"
+        style="@style/ButtonForegroundClickEffect"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:op_button_bgColor="@color/white"
+        app:op_button_inBrand="false"
+        app:op_button_isOutline="true"
+        app:op_button_title="SCAN BEACONS"
+        app:op_button_titleColor="@color/op_black" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

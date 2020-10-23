@@ -1,0 +1,3 @@
+[submodule "OrderPay-Stubs"]
+	path = OrderPay-Stubs
+	url = https://github.com/Checkfer-Limited/OrderPay-Stubs

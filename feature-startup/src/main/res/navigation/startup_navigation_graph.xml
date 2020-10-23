@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/feed_navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <activity
+        android:id="@+id/splashActivity"
+        android:name="com.checkfer.feature.startup.presentation.SplashActivity"
+        android:label="Splash Activity" />
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.checkfer.feature.startup.presentation.SplashFragment"
+        android:label="Splash Fragment" />
+</navigation>

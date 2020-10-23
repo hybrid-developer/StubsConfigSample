@@ -1,0 +1,71 @@
+subprojects {
+    apply plugin: 'jacoco'
+    jacoco {
+        toolVersion = '0.8.4'
+    }
+}
+
+apply plugin: 'jacoco'
+
+def projectsToSkip = [ "core-test-rxutils" ]
+def fileFilter = ['**/R.class',
+                  '**/R$*.class',
+                  '**/BuildConfig.*',
+                  '**/Manifest*.*',
+                  '**/*Test*.*',
+                  'android/**/*.*',
+                  'androidx/**/*.*',
+                  '**/*$ViewInjector*.*',
+                  'data*.*',
+                  '*Activity*.*',
+                  '*Fragment*.*',
+                  '*Adapter*.*']
+def publishedProjects = subprojects.findAll { !projectsToSkip.contains(it.projectDir.name) }
+
+task jacocoMerge(type: JacocoMerge) {
+    publishedProjects.each { subproject ->
+        executionData subproject.tasks.withType(Test)
+    }
+}
+
+task jacocoRootReport(type: JacocoReport) {
+    dependsOn "jacocoMerge", "app:testDebugUnitTest"
+
+    def classesTree = files().asFileTree
+    def sourcesTree = files().asFileTree
+    for(project in publishedProjects) {
+        classesTree = classesTree.plus(fileTree(dir: "$project.buildDir/tmp/kotlin-classes/debug",
+            excludes: fileFilter))
+        sourcesTree = sourcesTree.plus(fileTree(dir: "$project.projectDir/src/main/java"))
+    }
+
+    getSourceDirectories().setFrom(sourcesTree)
+    getClassDirectories().setFrom(classesTree)
+    getExecutionData().setFrom(jacocoMerge.destinationFile)
+
+    reports {
+        html.enabled = true
+        xml.enabled = true
+        csv.enabled = true
+    }
+
+    doFirst {
+        getExecutionData().setFrom(files(executionData.findAll { it.exists() }))
+    }
+
+    doLast {
+        def instructions = 0.0
+        def covered = 0.0
+        new File("$project.buildDir/reports/jacoco/jacocoRootReport/jacocoRootReport.csv").eachLine { line ->
+            def tokens = line.split(",")
+            if (!tokens[3].isNumber()) {
+                return
+            }
+            instructions += tokens[3].toInteger() + tokens[4].toInteger()
+            covered += tokens[4].toInteger()
+        }
+
+
+        printf("Code coverage:%.2f", covered/instructions*100.0)
+    }
+}

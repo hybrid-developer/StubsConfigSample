@@ -1,0 +1,10 @@
+repositories {
+    google()
+    jcenter()
+}
+dependencies {
+
+    implementation "com.squareup:javapoet:1.11.1"
+    implementation "com.squareup:kotlinpoet:0.7.0"
+    implementation 'org.xerial:sqlite-jdbc:3.25.2'
+}
